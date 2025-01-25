@@ -39,12 +39,11 @@ xhost +local:root
 #   This Unix domain socket enables communication between X clients and X server
 #   Format is host-path:container-path
 #
-# -v "$(pwd)/../../../fingerprint_generation/":/app:
+# -v "$(pwd)":/app:
 #   Mounts application directory into container
 #   $(pwd) gets current directory path
-#   ../../../fingerprint_generation/ navigates to application root
 #   :/app is where it's mounted in the container
-#
+
 docker run -it \
   --net=host \
   --ipc=host \
