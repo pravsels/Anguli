@@ -1,4 +1,3 @@
-# Use Ubuntu 12.04
 FROM ubuntu:12.04
 
 # Avoid interactive dialog during package installation
